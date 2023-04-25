@@ -1,0 +1,61 @@
+/* *
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
+ :root {
+     --vp-c-accent: #8b2cde;
+     --vp-c-brand: #9d3ff0;
+     --vp-c-brand-dark: #923fdb;
+ }
+ 
+ :root {
+     --vp-button-brand-border: #8b2cde;
+     --vp-button-brand-text: #fff;
+     --vp-button-brand-bg: #8b2cde;
+     --vp-button-brand-hover-border: #7E22CE;
+     --vp-button-brand-hover-text: #fff;
+     --vp-button-brand-hover-bg: #7E22CE;
+     --vp-button-brand-active-border: #7E22CE;
+     --vp-button-brand-active-text: #A8A8A8;
+     --vp-button-brand-active-bg: #7E22CE;
+ }
+ 
+ 
+ :root {
+     --vp-home-hero-name-color: transparent;
+     --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+     #9333EA 30%,
+             #147ACB);
+     --vp-home-hero-image-background-image: linear-gradient(-45deg,
+             #9333EA 10%,
+             #a854f8);
+     --vp-home-hero-image-filter: blur(30px);
+ }
+ 
+ @media (min-width: 640px) {
+     :root {
+         --vp-home-hero-image-filter: blur(56px);
+     }
+ }
+ 
+ @media (min-width: 960px) {
+     :root {
+         --vp-home-hero-image-filter: blur(72px);
+     }
+ }
+ 
+ 
+ .dark .vp-doc a,
+ .dark .vp-doc a>code,
+ .dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
+ .dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
+ .dark .link.link:hover,
+ .dark .link.link.active,
+ .dark .edit-link-button.edit-link-button,
+ .dark .pager-link .title {
+     color: #923fdb;
+ }
